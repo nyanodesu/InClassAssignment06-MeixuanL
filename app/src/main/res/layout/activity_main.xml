@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_margin="5dp">
+
+    <EditText
+        android:id="@+id/pokemon_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pokemon Name"/>
+
+    <EditText
+        android:id="@+id/pokemon_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pokemon Type"/>
+
+    <CheckBox
+        android:id="@+id/evolve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Able to evolve?"/>
+    <EditText
+        android:id="@+id/generation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Which Generation?"
+        android:inputType="number"/>
+    <Button
+        android:onClick="submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"/>
+
+</LinearLayout>
